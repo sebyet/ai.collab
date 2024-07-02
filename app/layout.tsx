@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cutive.className}>
+    <html lang="en">
         <body className="bg-background min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
           <main className="container mx-auto my-auto px-4 overflow-hidden md:overflow-visible pt-5">
