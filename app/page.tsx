@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col mt-auto gap-10 px-5 md:px-0 min-h-screen">
+    <div className="flex flex-col mt-auto mb-auto gap-10 px-5 md:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
         <Image
           className="mt-auto"

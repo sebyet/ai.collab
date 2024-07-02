@@ -29,13 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
-        <body className="bg-background min-h-screen overflow-x-hidden text-pretty">
+        <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
-          <main className="container mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
+          <main className="container flex-1 flex flex-col mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
             {children}   
           </main>
           <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">
-          <footer className="flex justify-end items-center">
+            <footer className="flex justify-end items-center">
               <Button className="flex flex-row items-center justify-center" size="link" variant="link">
                 <Linkedin className="pr-1 h-6"/> a sebyet company
               </Button> 
