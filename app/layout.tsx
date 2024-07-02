@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Cutive, Inter, Roboto_Mono } from "next/font/google";
+import { Cutive, Inter, Roboto_Mono, Noto_Serif, Domine } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const cutive = Cutive({
+const domine = Domine({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cutive.variable} ${roboto_mono.variable}`}>
-        <body className="bg-background min-h-screen overflow-x-hidden text-pretty leading-none">
+    <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
+        <body className="bg-background min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
           <main className="container mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
             {children}   
