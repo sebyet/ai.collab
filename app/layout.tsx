@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${cutive.variable} ${roboto_mono.variable}`}>
         <body className="bg-background min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
-          <main className="container mx-auto my-auto px-4 overflow-hidden md:overflow-visible pt-5">
+          <main className="container mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
             {children}   
           </main>
           <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">

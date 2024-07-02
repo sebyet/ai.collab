@@ -28,10 +28,10 @@ export default function Home() {
             We create custom learning journeys to help managers integrate AI tools & prompting techniques effectively in their daily work.
           </Typography>
           <div className="flex flex-row gap-3 flex-wrap">
-            <span className="border-brand bg-background border rounded-full text-md text-brand p-3">Boost your productivity</span>
-            <span className="border-brand bg-background border rounded-full text-brand p-3">Explore new business opportunities</span>
-            <span className="border-brand bg-background border rounded-full text-brand p-3">Superchage your work</span>
-            <span className="border-brand bg-background border rounded-full text-brand p-3">Get the best from yourself</span>
+            <span className="border-brand bg-background border rounded-full text-md text-brand p-3"><Typography variant="base">Boost your productivity</Typography></span>
+            <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Explore new business opportunities</Typography></span>
+            <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Superchage your work</Typography></span>
+            <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Get the best from yourself</Typography></span>
           </div>
         
           <Input placeholder="sebastien.payet@gmail.com" onClearClick={() => {}} startIcon={<Mail />} type='text'/>
