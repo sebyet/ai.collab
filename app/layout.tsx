@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className={cutive.className}>
         <body className="bg-background min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
-          <main className="container flex items-center justify-center mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
+          <main className="container mx-auto my-auto px-4 overflow-hidden md:overflow-visible pt-5">
             {children}   
           </main>
           <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">

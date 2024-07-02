@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10 px-5 md:px-0">
+    <div className="flex flex-col items-center justify-center gap-10 px-5 md:px-0 min-h-screen">
       <div className="grid grid-cols-2 gap-20">
         <Image
           className="mt-auto"
@@ -41,6 +41,6 @@ export default function Home() {
 
 
       </div>
-    </main>
+    </div>
   );
 }
