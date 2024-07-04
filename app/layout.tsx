@@ -37,7 +37,7 @@ export default function RootLayout({
           <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">
             <footer className="flex justify-end items-center">
               <Button className="flex flex-row items-center justify-center" size="link" variant="link">
-                <Linkedin className="pr-1 h-6"/> a sebyet company
+                Sébastien Payet
               </Button> 
             </footer>
           </div>

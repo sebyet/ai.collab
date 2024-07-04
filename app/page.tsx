@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Typography } from "@/components/ui/typography";
 import { Mail, Search } from "lucide-react";
 import Image from "next/image";
+import { NewsletterForm } from "./components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -34,8 +35,7 @@ export default function Home() {
             <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Improve Decision Making</Typography></span>
             <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Decrease Costs</Typography></span>
           </div>
-          <Input placeholder="sebastien.payet@gmail.com" onClearClick={() => {}} startIcon={<Mail />} type='text'/>
-          <Button className="w-fit" variant="default">Get more informations</Button>
+          <NewsletterForm/>
       </div>
 
 
