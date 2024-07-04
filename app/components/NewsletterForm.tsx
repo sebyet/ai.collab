@@ -21,7 +21,6 @@ export function NewsletterForm() {
 
   async function onSubmit(data: z.infer<typeof NewsletterFormSchema>) {
     const response = await saveEmail(data)
-
     if (response?.success) {
       toast({
         description: "Your message has been sent.",

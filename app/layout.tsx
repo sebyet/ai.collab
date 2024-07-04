@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Toaster } from "@/components/ui/toaster";
 
 const domine = Domine({
   subsets: ['latin'],
@@ -32,7 +33,8 @@ export default function RootLayout({
         <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
           <main className="container flex-1 flex flex-col mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
-            {children}   
+            {children} 
+            <Toaster />  
           </main>
           <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">
             <footer className="flex justify-end items-center">
