@@ -39,7 +39,7 @@ export default function RootLayout({
           <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">
             <footer className="flex justify-end items-center">
               <Button className="flex flex-row items-center justify-center" size="link" variant="link">
-                Sébastien Payet
+                You want to build your own AI Chat? Discover Realiserai.
               </Button> 
             </footer>
           </div>

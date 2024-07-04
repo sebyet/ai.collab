@@ -1,11 +1,10 @@
 import type { Config } from "tailwindcss";
 
-
-const caribbean_current = { DEFAULT: '#006d77', 100: '#001617', 200: '#002b2f', 300: '#004146', 400: '#00565e', 500: '#006d77', 600: '#00b4c4', 700: '#13ebff', 800: '#62f2ff', 900: '#b0f8ff' };
-const tiffany_blue = { DEFAULT: '#83c5be', 100: '#152c2a', 200: '#2a5954', 300: '#3f857e', 400: '#56afa6', 500: '#83c5be', 600: '#9bd0cb', 700: '#b4dcd8', 800: '#cde7e5', 900: '#e6f3f2' };
+const oxford_blue = { DEFAULT: '#001d3d', 100: '#00060c', 200: '#000c18', 300: '#001225', 400: '#001831', 500: '#001d3d', 600: '#004997', 700: '#0074f1', 800: '#4ba2ff', 900: '#a5d1ff' }; 
+const yale_blue = { DEFAULT: '#003566', 100: '#000b14', 200: '#001529', 300: '#00203d', 400: '#002a52', 500: '#003566', 600: '#005fb8', 700: '#0a89ff', 800: '#5cb0ff', 900: '#add8ff' };
+const mikado_yellow = { DEFAULT: '#ffc300', 100: '#332700', 200: '#664e00', 300: '#997500', 400: '#cc9c00', 500: '#ffc300', 600: '#ffcf33', 700: '#ffdb66', 800: '#ffe799', 900: '#fff3cc' };
+const gold = { DEFAULT: '#ffd60a', 100: '#352c00', 200: '#6a5800', 300: '#9f8500', 400: '#d4b100', 500: '#ffd60a', 600: '#ffde3b', 700: '#ffe76c', 800: '#ffef9d', 900: '#fff7ce' };
 const alice_blue = { DEFAULT: '#edf6f9', 100: '#183d49', 200: '#307991', 300: '#5badc8', 400: '#a3d1e0', 500: '#edf6f9', 600: '#f0f7fa', 700: '#f4f9fb', 800: '#f7fbfc', 900: '#fbfdfe' };
-const pale_dogwood = { DEFAULT: '#ffddd2', 100: '#5d1700', 200: '#ba2e00', 300: '#ff5117', 400: '#ff9774', 500: '#ffddd2', 600: '#ffe3da', 700: '#ffeae3', 800: '#fff1ed', 900: '#fff8f6' };
-const atomic_tangerine = { DEFAULT: '#e29578', 100: '#39180c', 200: '#723018', 300: '#ac4824', 400: '#d6673f', 500: '#e29578', 600: '#e8aa93', 700: '#eebfae', 800: '#f4d4c9', 900: '#f9eae4' };
 const black = { DEFAULT: '#000000', 100: '#000000', 200: '#000000', 300: '#000000', 400: '#000000', 500: '#000000', 600: '#333333', 700: '#666666', 800: '#999999', 900: '#cccccc' };
 const white = { DEFAULT: '#ffffff', 100: '#333333', 200: '#666666', 300: '#999999', 400: '#cccccc', 500: '#ffffff', 600: '#ffffff', 700: '#ffffff', 800: '#ffffff', 900: '#ffffff' };
 const anti_flash_white = { DEFAULT: '#e9ecef', 100: '#282f37', 200: '#505f6e', 300: '#7c8ea0', 400: '#b3bec8', 500: '#e9ecef', 600: '#eef1f3', 700: '#f3f4f6', 800: '#f7f8f9', 900: '#fbfbfc' };
@@ -32,23 +31,25 @@ const config: Config = {
     },
     extend: {
       colors: {
-        brand: caribbean_current[500],
-        brandVariant: caribbean_current[300],
+        brand: oxford_blue[500],
+        brandVariant: oxford_blue[300],
         onBrand: white[500],
-        brandLight: tiffany_blue[700],
-        brandLightVariant: tiffany_blue[500],
-        onBrandLight: caribbean_current[500],
+        brandLight: yale_blue[700],
+        brandLightVariant: yale_blue[500],
+        onBrandLight: white[500],
         muted: alice_blue[500],
         background: white[500],
         onBackground: black[500],
         neutral: anti_flash_white[500],
         onNeutral: anti_flash_white[300],
-        accent: atomic_tangerine[500],
-        accentVariant: atomic_tangerine[700],
+        accent: mikado_yellow[500],
+        accentVariant: mikado_yellow[700],
         onAccent: black[500],
-        accentLight: pale_dogwood[700],
-        accentLightVariant: pale_dogwood[500],
-        onAccentLight: atomic_tangerine[500],
+        accentLight: gold[700],
+        accentLightVariant: gold[500],
+        onAccentLight: mikado_yellow[500],
+        destructive: penn_red[500],
+        success: dartmouth_green[500]
       },
       keyframes: {
         "accordion-down": {
