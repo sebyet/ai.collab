@@ -28,11 +28,11 @@ export default function Home() {
             AI tools like ChatGTP have multiple benefits when they are used effectively. Take part in a personalized learning path and close the gap between these revolutionary technologies and your business operations.
           </Typography>
           <div className="flex flex-row gap-3 flex-wrap">
-            <span className="border-brand bg-background border rounded-full text-md text-brand p-3"><Typography variant="base">Boost your productivity</Typography></span>
+            <span className="border-brand bg-background border rounded-full text-md text-brand p-3"><Typography variant="base">Boost productivity</Typography></span>
             <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Explore new business opportunities</Typography></span>
             <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Enhance Creativity</Typography></span>
             <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Improve Decision Making</Typography></span>
-            <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Cut Costs</Typography></span>
+            <span className="border-brand bg-background border rounded-full text-brand p-3"><Typography variant="base">Decrease Costs</Typography></span>
           </div>
           <Input placeholder="sebastien.payet@gmail.com" onClearClick={() => {}} startIcon={<Mail />} type='text'/>
           <Button className="w-fit" variant="default">Get more informations</Button>
