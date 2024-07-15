@@ -32,14 +32,14 @@ export default function RootLayout({
     <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
         <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty">
           <Navbar />
-          <main className="container flex-1 flex flex-col mx-auto px-4 overflow-hidden md:overflow-visible pt-5">
+          <main className="container flex-1 flex flex-col mx-auto px-4 xs:pt-0 overflow-hidden md:overflow-visible sm:pt-5">
             {children} 
             <Toaster />  
           </main>
-          <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pb-5">
-            <footer className="flex justify-end items-center">
-              <Button className="flex flex-row items-center justify-center" size="link" variant="link">
-                You want to build your own AI Chat? Discover Realiserai.
+          <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pt-5 pb-5">
+            <footer className="flex justify-end items-center flex-wrap">
+              <Button className="flex flex-row items-center justify-center text-wrap" size="link" variant="link">
+                <a target="blank" href="https://sebyet.com">Sébastien Payet</a>
               </Button> 
             </footer>
           </div>
