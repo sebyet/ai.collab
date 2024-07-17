@@ -60,7 +60,6 @@ export function NewsletterForm() {
         setNewSubscription(false);
       }
     } catch (error) {
-      console.error('Error saving email:', error);
       setNewSubscription(false);
     } finally {
       setShowSpinner(false);
@@ -84,8 +83,8 @@ export function NewsletterForm() {
               </FormItem>
             )}
           />
-          <Button className="sm:w-fit" variant="accent" type="submit">
-            {showSpinner && <Spinner/>}
+          <Button className="sm:w-fit flex flex-row gap-1" variant="accent" type="submit">
+            {showSpinner && <Spinner />}
             Get More Informations
           </Button>
         </form>
