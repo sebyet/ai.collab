@@ -19,7 +19,7 @@ const roboto_mono = Roboto_Mono({
   variable: '--font-roboto-mono',
 })
 export const metadata: Metadata = {
-  title: "Apprendrai",
+  title: "apprendrai",
   description: "Ai courses to supercharge your skills",
 };
 
