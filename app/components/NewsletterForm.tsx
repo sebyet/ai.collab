@@ -88,7 +88,7 @@ export function NewsletterForm() {
           />
           <Button className="sm:w-fit flex flex-row gap-1 items-center" variant="accent" type="submit">
             {showSpinner && <Spinner />}
-            Get More Informations
+            Get more information
           </Button> 
         </form>
       </Form>
