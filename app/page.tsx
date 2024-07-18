@@ -24,7 +24,7 @@ export default function Home() {
             Learn to use AI tools like ChatGPT to elevate your business operations.
           </Typography>
           <Typography className="mx-auto" variant="large">
-            We bridge the gap between AI technologies and your business operations. Our personalized online training empowers you to understand, use, and integrate AI into your daily tasks and strategic plans.
+            We bridge the gap between AI technologies and your business operations. Our personalized online coaching empowers you to understand, use, and integrate AI into your daily tasks and strategic plans.
           </Typography>
           <div className="flex flex-row gap-3 flex-wrap">
             <span className="border-brand bg-background border rounded-full text-md text-brand p-3"><Typography variant="base">Boost productivity</Typography></span>
