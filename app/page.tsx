@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
     <div className="flex flex-col mt-auto mb-auto gap-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-20">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 md:gap-20">
         <Image
           className="mt-auto"
           unoptimized
