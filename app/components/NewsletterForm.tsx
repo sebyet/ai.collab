@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { NewsletterFormSchema } from "../schema/newsletter"
 import { saveEmail } from "../actions/newsletter"
-import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form"
+import { Form, FormControl, FormDescription, FormField, FormItem, FormMessage } from "@/components/ui/form"
 import { useState } from "react";
 import {
   Dialog,
@@ -68,7 +68,7 @@ export function NewsletterForm() {
 
   return (
     <>
- 
+
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5 justify-between">
           <FormField
@@ -79,6 +79,9 @@ export function NewsletterForm() {
                 <FormControl>
                   <Input placeholder="sebastien.payet@gmail.com" onClearClick={() => form.setValue(field.name, '')} startIcon={<Mail />} type='text' {...field} />
                 </FormControl>
+                <FormDescription>
+                  Leave us your email address and we will contact you.
+                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -94,8 +97,8 @@ export function NewsletterForm() {
           <DialogHeader>
             <DialogTitle>Thank you for your interest!</DialogTitle>
             <DialogDescription>
-              {newSubscription &&  "We received your email adress and will come back as soon as possible to you to give you more informations."}
-              {!newSubscription &&  "Hey it looks like you have already registered your email, we will come back as soon as possible to you to give you more informations."}
+              {newSubscription &&  "We have received your email address and will get back to you as soon as possible with more information."}
+              {!newSubscription &&  "It seems that you have already registered your email address. We will get back to you as soon as possible to give you more information."}
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
