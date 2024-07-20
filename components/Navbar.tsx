@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
                                 alt="thumbnail" />
                                 <span className='text-2xl text-onBackground font-bold'>apprendrai</span>
                             </span>
-                            <span className='text-sm text-onBackground font-normal'>AI Coaching to superchage your skills</span>
+                            <span className='text-sm text-onBackground font-normal'>Humans & AI, Together, Forward.</span>
                         </a>
                     </li>
                 </ul>
