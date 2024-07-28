@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/toaster";
+import { FooterCTA } from "./components/FooterCTA";
+import { Footer } from "./components/Footer";
 
 const domine = Domine({
   subsets: ['latin'],
@@ -30,18 +32,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
-        <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty">
+        <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty container">
           <Navbar />
-          <main className="container flex-1 flex flex-col mx-auto px-4 xs:pt-0 overflow-hidden md:overflow-visible sm:pt-5">
+          <main className="flex-1 flex flex-col overflow-hidden md:overflow-visible pt-10">
             {children} 
             <Toaster />  
           </main>
-          <div className="container mx-auto px-4 overflow-hidden md:overflow-visible pt-5 pb-5">
-            <footer className="flex justify-end items-center flex-wrap">
-              <Button className="flex flex-row items-center justify-center text-wrap" size="link" variant="link">
-                <a target="blank" href="https://sebyet.com">Sébastien Payet</a>
-              </Button> 
-            </footer>
+          <div className="container mx-auto px-4 overflow-hidden md:overflow-visible">
+            <FooterCTA/>
+            <Footer/>  
           </div>
         </body>
       </html>

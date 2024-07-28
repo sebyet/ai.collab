@@ -28,8 +28,8 @@ export const state =
             active: "active:scale-[.95]"
         },
         secondary: {
-            initial: "bg-brandLight text-onBrandLight border-none",
-            hover: "hover:bg-brandLightVariant hover:text-onBrandLight",
+            initial: "bg-background text-onBrandLight border-none",
+            hover: "hover:bg-muted hover:text-onBrandLight",
             focusVisible: "focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2",
             active: "active:scale-[.95]"
         },
@@ -41,7 +41,7 @@ export const state =
         },
         outline: {
             initial: "bg-background text-brand border border-brand",
-            hover: "hover:bg-brandLight hover:text-brand",
+            hover: "hover:bg-muted hover:text-brand",
             focusVisible: "focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2",
             active: "active:scale-[.95]"
         },
