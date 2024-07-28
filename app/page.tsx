@@ -3,11 +3,10 @@
 'use client'
 import { Typography } from "@/components/ui/typography";
 import Image from "next/image";
-import { NewsletterForm } from "./components/NewsletterForm";
-import { BubbleChat } from 'flowise-embed-react'
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { data, data2 } from "@/data/home";
 import { Button } from "@/components/ui/button";
+import { Link } from "next-view-transitions";
 
 export default function Home() {
   return (
@@ -22,14 +21,14 @@ export default function Home() {
         width={200}
         alt="thumbnail" />
       <div className="flex flex-col gap-10">
-        <Typography className="max-w-4xl" variant="heading1">
-          AI consulting and products that,
+        <Typography className="max-w-4xl text-brand" variant="heading1">
+          AI <Link href={"/consulting"}><span className="underline cursor-pointer hover:text-brandVariant">consulting</span></Link> and <Link href={"/consulting"}><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
           <br />
-          pushes Humans & AI, Together, 
+          brings Humans & AI, Together, 
           <br />
           Forward.
         </Typography>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mx-auto gap-5">
+        <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
           {data.map((card, index) => (
             <Card className="border border-brand rounded-3xl flex flex-col p-4 justify-between" key={index}>
               <CardHeader className='gap-5'>
@@ -39,7 +38,9 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
-                <Button variant={index === 0 ? "default" : "outline"}>Discover</Button>
+                <Link href={card.href}>
+                  <Button className="w-full" variant={index === 0 ? "default" : "outline"}>{card.callToAction}</Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

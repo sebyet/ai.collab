@@ -11,7 +11,7 @@ export function Typography({ variant, children, className }: TypographyProps) {
   switch (variant) {
     case 'heading1':
       return (
-        <h1 className={cn("font-bold text-4xl lg:text-5xl tracking-wide lg:leading-relaxed text-pretty transition-colors", className)}>
+        <h1 className={cn("font-bold text-4xl lg:text-5xl tracking-wide lg:leading-snug text-pretty transition-colors", className)}>
           {children}
         </h1>
       );
