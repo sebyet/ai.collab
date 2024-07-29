@@ -12,9 +12,9 @@ import RotatingLogo from "./components/RotatingLogo";
 export default function Home() {
   return (
     <>
-    <div className="flex flex-col max-w-6xl mx-auto gap-20 relative px-0">
+    <div className="flex flex-col max-w-6xl mx-auto gap-20 relative">
       <div className="absolute right-0 top-0">
-      <RotatingLogo/>
+        <RotatingLogo/>
       </div>
       
       <div className="flex flex-col gap-10">
@@ -58,17 +58,17 @@ export default function Home() {
         <Typography variant="heading2">Latest Project</Typography>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
           <Image
-          className="mt-auto"
+          className="mt-auto rounded-3xl"
           unoptimized
           priority
           src={"/demo.png"}
           height={1500}
           width={1500}
           alt="thumbnail" />
-          <div className="flex flex-col gap-5 my-auto">
+          <div className="flex flex-col gap-5 my-auto border border-accent rounded-3xl w-full h-full justify-center p-10">
             <Typography variant="heading3">Problem</Typography>
             <Typography variant="paragraph">Born in La Réunion, my journey into the digital world started with a focus on marketing and sales.<br/> A few years later, my interest in digital product development transformed into a passion for creating and solving problems with great user experiences.</Typography>
-            <Button className="w-fit" >Discover</Button>
+            <Button className="w-fit" >Discover the project to be cool</Button>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { Mail, Search } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { NewsletterFormSchema } from "../schema/newsletter"
-import { saveEmail } from "../actions/newsletter"
+import { saveEmail } from "../talk-to-us/actions/newsletter"
 import { Form, FormControl, FormDescription, FormField, FormItem, FormMessage } from "@/components/ui/form"
 import { useState } from "react";
 import {

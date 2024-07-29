@@ -23,7 +23,7 @@ const Benefit = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <Typography className="bg-brand text-onBrand font-semibold p-3 rounded-md flex gap-1 w-fit" variant="paragraph">{card.key}</Typography>
+              <Typography className="bg-brand text-onBrand p-3 rounded-md flex gap-1 w-fit" variant="paragraph">{card.key}</Typography>
             </CardContent>
           </Card>
         ))}
