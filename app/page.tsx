@@ -7,19 +7,16 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { data, data2 } from "@/data/home";
 import { Button } from "@/components/ui/button";
 import { Link } from "next-view-transitions";
+import RotatingLogo from "./components/RotatingLogo";
 
 export default function Home() {
   return (
     <>
     <div className="flex flex-col max-w-6xl mx-auto gap-20 relative px-0">
-      <Image
-        className="md:right-0 md:top-0 md:absolute xs:mx-auto"
-        unoptimized
-        priority
-        src={"/logo.png"}
-        height={200}
-        width={200}
-        alt="thumbnail" />
+      <div className="absolute right-0 top-0">
+      <RotatingLogo/>
+      </div>
+      
       <div className="flex flex-col gap-10">
         <Typography className="max-w-4xl text-brand" variant="heading1">
           AI <Link href={"/consulting"}><span className="underline cursor-pointer hover:text-brandVariant">consulting</span></Link> and <Link href={"/consulting"}><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
@@ -47,7 +44,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-10">
-        <Typography variant="heading2">Our Vision</Typography>
+        <Typography variant="heading2">Vision</Typography>
         <div className=" bg-muted p-10 rounded-xl flex flex-col gap-3">
           <Typography className="text-lg" variant="blockquote">
             "We don't just implement AI—we forge partnerships between human ingenuity and artificial intelligence. 
@@ -58,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col gap-10">
-        <Typography variant="heading2">Our Latest Project</Typography>
+        <Typography variant="heading2">Latest Project</Typography>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
           <Image
           className="mt-auto"

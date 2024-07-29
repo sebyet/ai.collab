@@ -10,28 +10,16 @@ import { usePathname } from 'next/navigation';
 export const links = [
     {
       title: "Consulting",
-      path: "/pricing",
-      name: "pricing",
+      path: "/consulting",
+      name: "consulting",
     },
     {
       title: "Products",
-      path: "/faq",
-      name: "faq",
+      path: "/products",
+      name: "products",
     },
     {
       title: "Story",
-      path: "/story",
-      name: "update",
-    },
-    /*
-    {
-      title: "Case Study",
-      path: "/case",
-      name: "case",
-    },
-    */
-    {
-      title: "Faq",
       path: "/story",
       name: "story",
     },
@@ -39,21 +27,8 @@ export const links = [
 
 const Navbar: React.FC = () => {
     const pathname = usePathname();
-  const [isOpen, setOpen] = useState(false);
 
   const lastPath = `/${pathname.split("/").pop()}`;
-
-  const handleToggleMenu = () => {
-    setOpen((prev) => {
-      document.body.style.overflow = prev ? "" : "hidden";
-      return !prev;
-    });
-  };
-
-  if (pathname.includes("pitch")) {
-    return null;
-  }
-
 
     return (
         <>
@@ -71,13 +46,13 @@ const Navbar: React.FC = () => {
                         return (
                             <li key={name}>
                                 <Link href={path}>
-                                    <Button size="link" variant="link" className={cn(isActive && "text-brandVariant text-lg")}>{title}</Button>
+                                    <Button size="link" variant="link" className={cn(isActive && "text-accent hover:text-accentVariant")}>{title}</Button>
                                 </Link>
                             </li>
                         );
                     })}
                     <Link href="/talk-to-us">
-                     <Button size='sm' variant="accent"> Request an audit</Button>
+                     <Button size='sm' variant="accent">Talk to us</Button>
                 </Link>
                 </ul>
               
