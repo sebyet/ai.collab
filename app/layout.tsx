@@ -40,7 +40,7 @@ export default function RootLayout({
             {children} 
             <Toaster />  
           </main>
-          <div className="container mx-auto px-4 overflow-hidden md:overflow-visible">
+          <div className="overflow-hidden md:overflow-visible">
             <FooterCTA/>
             <Footer/>  
           </div>

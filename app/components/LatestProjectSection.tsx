@@ -18,10 +18,10 @@ export default function LatestProjectSection() {
           priority
         />
         <div className="flex flex-col gap-5 my-auto border border-accent rounded-xl w-full h-full justify-center p-10">
-          <Typography variant="heading3">Get actionable insights from CVs.</Typography>
-          <Typography variant="paragraph">Transform your recruitment strategy with our AI CV tool. By leveraging advanced analytics and smart recommendations, you can improve your candidate selection process, save time, and ultimately find the best talent for your organization.</Typography>
-          <Link href={"https://askcv.vercel.app/"}>
-            <Button className="w-fit">Discover AskCV</Button>
+          <Typography variant="heading3">AskCV.xyz - Get actionable insights from CVs.</Typography>
+          <Typography variant="paragraph">Use our intelligent CV tool to benefit from advanced analysis and intelligent content recommendations. Speed up the selection process, save time and find the best talent for your company.</Typography>
+          <Link href={"https://askcv.xyz"}>
+            <Button className="w-full">Discover AskCV</Button>
           </Link>
         </div>
       </div>

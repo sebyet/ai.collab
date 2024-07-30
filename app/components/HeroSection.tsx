@@ -9,9 +9,9 @@ export default function HeroSection() {
   return (
     <div className="flex flex-col gap-10">
       <Typography className="max-w-4xl" variant="heading1">
-        AI <Link href="/consulting"><span className="underline cursor-pointer hover:text-brandVariant">engineering</span></Link> and <Link href="/products"><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
+        AI <Link href="/engineering"><span className="underline cursor-pointer hover:text-brandVariant">engineering</span></Link> and <Link href="/products"><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
         <br />
-        brings Humans & AI, Together, 
+        bring Humans & AI, Together, 
         <br />
         Forward.
       </Typography>

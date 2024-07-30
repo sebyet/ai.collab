@@ -7,9 +7,9 @@ export default function VisionSection() {
       <Typography variant="heading3">Vision</Typography>
       <div className="flex flex-col gap-3">
         <Typography className="text-lg lg:leading-loose" variant="blockquote">
-        « We see a future where humans continually adapt to the evolution of AI, enabling strong cooperation that supercharges skills and unlocks unlimited possibilities for innovation and growth. »
+        « We see a future where humans continually adapt to the evolution of AI, enabling strong cooperation that supercharges skills and unlocks new possibilities for innovation and growth. »
         </Typography>
-        <Typography className="font-semibold italic" variant="large">Sébastien</Typography>
+        <Typography className="font-semibold italic ml-auto" variant="large">Sébastien - Founder</Typography>
       </div>
     </div>
   );
