@@ -7,7 +7,7 @@ const Benefit = () => {
   return (
     <div className="flex flex-col gap-10 max-w-6xl mx-auto">
       <Typography variant="heading3">How can we help you?</Typography>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
         {data.map((card, index) => (
           <Card className=" bg-muted rounded-xl flex flex-col p-4 justify-between gap-20" key={index}>
             <CardHeader className='gap-5'>

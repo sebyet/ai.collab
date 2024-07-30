@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Typography } from "@/components/ui/typography";
 import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
@@ -11,20 +12,24 @@ export default function Page() {
     <div className="flex flex-col max-w-6xl mx-auto gap-10 relative px-0">
       <div className="flex flex-col gap-3">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
-            I believe AI can make a real difference and and help people.
+            AI can make a real difference and and help people.
           </Typography>
           <Typography className="text-center mx-auto max-w-xl" variant="large">
-            Driven by a love for technology and helping others, I believe AI can transform lives and make a real difference.          
+            Driven by a love for technology and helping others, we believe AI can transform businesses and make a real difference.          
           </Typography>
       </div>
       <div className="flex flex-col gap-10 max-w-6xl mx-auto">
         <div className="flex flex-col gap-3">
           <Typography variant="heading3">Problem</Typography>
-          <Typography variant="paragraph">Born in La Réunion, my journey into the digital world started with a focus on marketing and sales.<br/> A few years later, my interest in digital product development transformed into a passion for creating and solving problems with great user experiences.</Typography>
+          <Typography variant="paragraph">
+            In today's rapidly evolving technology landscape, artificial intelligence is no longer a futuristic concept - it's here, and it's transforming industries at an unprecedented pace. However, one major challenge remains: integrating AI into human workflows and decision-making processes remains difficult.
+          </Typography>
         </div>
         <div className="flex flex-col gap-3">
           <Typography variant="heading3">Solution</Typography> 
-          <Typography variant="paragraph">I am based in Freiburg im Breisgau, Germany, contributing to Haufe Akademies e-commerce evolution. Passionate about solving real-world challenges through digital solutions, I am looking for freelance opportunities in Product Engineering, Software Development, and User Experience Optimisation.</Typography>
+          <Typography variant="paragraph">
+            At Apprendrai, we embrace the fact that the true potential of AI lies not in replacing humans, but in augmenting and enhancing human capabilities. Our mission is to meet these challenges head on, creating AI engineering solutions and products that foster a harmonious and productive relationship between humans and AI.
+           </Typography>
         </div>
       </div>
     </div>
