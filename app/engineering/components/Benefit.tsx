@@ -5,7 +5,7 @@ import React from 'react';
 
 const Benefit = () => {
   return (
-    <div className="flex flex-col gap-10 max-w-6xl mx-auto">
+    <div className="flex flex-col gap-10">
       <Typography variant="heading3">How can we help you?</Typography>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
         {data.map((card, index) => (
