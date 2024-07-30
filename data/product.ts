@@ -1,11 +1,11 @@
 export const data = [
     {
         title: "Boost Productivity",
-        description: "Make your work faster and fix problems quickly.",
+        description: "Make your work faster and easier.",
     },
     {
         title: "Explore Opportunities",
-        description: "Help you find new chances and improve your projects.",
+        description: "Help you find new opportunities.",
     },
     {
         title: "Enhance Creativity",
@@ -13,6 +13,6 @@ export const data = [
     },
     {
         title: "Improve Decisions",
-        description: "Enable you to make better and smarter decisions with data.",
+        description: "Enable you to make better decisions.",
     },
 ];

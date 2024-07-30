@@ -1,7 +1,7 @@
 'use server'
 
 import { createClient } from "@/utils/supabase/server"
-import { NewsletterFormSchema } from "../../schema/newsletter";
+import { NewsletterFormSchema } from "../schema/newsletter";
 
 export async function saveEmail (data: any) {
     const supabase = createClient()

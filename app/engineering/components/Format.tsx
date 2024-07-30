@@ -6,15 +6,15 @@ import React from 'react';
 
 const data = [
   {
-    title: "Findings",
+    title: "Discover",
     description: "We evaluate your organization's AI awareness level and talk about your needs.",
   },
   {
-    title: "Recommendations",
+    title: "Act",
     description: "We act in three areas: teaching, integrating, or building AI solutions.",
   },
   {
-    title: "Discussions",
+    title: "Refine",
     description: "We engage in collaborative sessions to refine and improve the implemented AI initiatives.",
   },
 ];

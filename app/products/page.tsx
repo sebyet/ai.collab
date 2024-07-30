@@ -36,7 +36,7 @@ export default function Page() {
       </div>
       <div className="flex flex-col gap-20 max-w-6xl mx-auto">
         <div className="flex flex-col gap-10">
-          <Typography variant="heading3">Our Goal</Typography>
+          <Typography variant="heading3">Our Goals</Typography>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {data.map((card, index) => (
             <div className="flex flex-col gap-5 items-center text-center" key={index}>
