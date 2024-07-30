@@ -9,9 +9,9 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 export const links = [
     {
-      title: "Consulting",
-      path: "/consulting",
-      name: "consulting",
+      title: "Engineering",
+      path: "/engineering",
+      name: "engineering",
     },
     {
       title: "Products",
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
                         );
                     })}
                     <Link href="/talk-to-us">
-                     <Button size='sm' variant="accent">Talk to us</Button>
+                     <Button variant="accent">Talk to us</Button>
                 </Link>
                 </ul>
               

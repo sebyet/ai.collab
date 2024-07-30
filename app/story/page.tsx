@@ -9,10 +9,14 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="flex flex-col max-w-6xl mx-auto gap-10 relative px-0">
-        <Typography className="max-w-xl text-brand mx-auto text-center" variant="heading2">
-         This is a title for the story page with more than a line
-        </Typography>
-      
+      <div className="flex flex-col gap-3">
+          <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
+            I believe AI can make a real difference and and help people.
+          </Typography>
+          <Typography className="text-center mx-auto max-w-xl" variant="large">
+            Driven by a love for technology and helping others, I believe AI can transform lives and make a real difference.          
+          </Typography>
+      </div>
       <div className="flex flex-col gap-10 max-w-6xl mx-auto">
         <div className="flex flex-col gap-3">
           <Typography variant="heading3">Problem</Typography>

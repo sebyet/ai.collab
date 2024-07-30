@@ -7,15 +7,15 @@ import React from 'react';
 const data = [
   {
     title: "Findings",
-    description: "We make list of elements that could be improved.",
+    description: "We evaluate your organization's AI awareness level and talk about your needs.",
   },
   {
-    title: "Recommandations",
-    description: "We propose differents solutions that could fit you.",
+    title: "Recommendations",
+    description: "We act in three areas: teaching, integrating, or building AI solutions.",
   },
   {
     title: "Discussions",
-    description: "We talk about the priorities and the implementations.",
+    description: "We engage in collaborative sessions to refine and improve the implemented AI initiatives.",
   },
 ];
 
@@ -23,20 +23,13 @@ const data = [
 const Format = () => {
   return (
     <div className="flex flex-col gap-10 max-w-6xl mx-auto">
-      <div className="flex flex-col gap-5">
-       
-
-          <Typography variant="heading3">
-            Delivered in a format that works
-          </Typography>
-     
-      </div>
+      <Typography variant="heading3">Delivered in a format that works</Typography>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {data.map((card, index) => (
-          <Card className="border border-brand rounded-3xl p-10 min-h-[500px] flex flex-col" key={index}>
+          <Card className="border border-brand rounded-xl p-10 min-h-[500px] flex flex-col" key={index}>
               {index === 0 && <ScanSearch className='h-20 w-20 text-accent' />}
               {index === 2 && <Blocks className='h-20 w-20 text-accent' />}
-              <div className={index == 1 ? "" : 'mt-auto'}>
+              <div className={index == 1 ? "flex flex-col gap-3" : 'mt-auto flex flex-col gap-3'}>
                 <Typography variant='heading4'>{card.title}</Typography>
                 <Typography variant="paragraph">{card.description}</Typography>
               </div>

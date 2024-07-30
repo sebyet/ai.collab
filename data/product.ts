@@ -1,28 +1,18 @@
 export const data = [
     {
         title: "Boost Productivity",
-        description: "Pinpointing user experience pain points or technical inefficiencies.",
-        href: "/consulting",
-        callToAction: "Talk to us"
+        description: "Make your work faster and fix problems quickly.",
     },
     {
-        title: "Explore opportunities",
-        description: "Start using AskCV to accelerate your recruitment process.",
-        href: "https://askcv.vercel.app/",
-        callToAction: "Discover AskCV"
+        title: "Explore Opportunities",
+        description: "Help you find new chances and improve your projects.",
     },
     {
-        title: "Enhance creativity",
-        description: "Start using AskCV to accelerate your recruitment process.",
-        href: "https://askcv.vercel.app/",
-        callToAction: "Discover AskCV"
+        title: "Enhance Creativity",
+        description: "Bring your new ideas and boost your creativity.",
     },
     {
-        title: "Improve decision making",
-        description: "Start using AskCV to accelerate your recruitment process.",
-        href: "https://askcv.vercel.app/",
-        callToAction: "Discover AskCV"
+        title: "Improve Decisions",
+        description: "Enable you to make better and smarter decisions with data.",
     },
-]
-
-   
+];

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Toaster } from "@/components/ui/toaster";
 import { FooterCTA } from "./components/FooterCTA";
 import { Footer } from "./components/Footer";
+import { ViewTransitions } from "next-view-transitions";
 
 const domine = Domine({
   subsets: ['latin'],
@@ -31,7 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
+    <ViewTransitions>
+      <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
         <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty container">
           <Navbar />
           <main className="flex-1 flex flex-col overflow-hidden md:overflow-visible pt-10">
@@ -44,5 +46,6 @@ export default function RootLayout({
           </div>
         </body>
       </html>
+    </ViewTransitions>
   );
 }

@@ -6,24 +6,19 @@ import React from 'react';
 const Benefit = () => {
   return (
     <div className="flex flex-col gap-10 max-w-6xl mx-auto">
-      <div className="flex flex-col gap-5">
-       
-          <Typography variant="heading3">
-            Why team love audits
-          </Typography>
-        
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <Typography variant="heading3">How can we help you?</Typography>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
         {data.map((card, index) => (
-          <Card className=" bg-muted rounded-3xl flex flex-col p-4 justify-between gap-20" key={index}>
+          <Card className=" bg-muted rounded-xl flex flex-col p-4 justify-between gap-20" key={index}>
             <CardHeader className='gap-5'>
+              <div className="text-xl bg-onBrand p-5 w-fit rounded-xl">{card.icon}</div>
               <div className='w-full flex flex-col gap-3'>
                 <Typography variant='heading4'>{card.title}</Typography>
                 <Typography variant="paragraph">{card.description}</Typography>
               </div>
             </CardHeader>
             <CardContent>
-              <Typography className="bg-brand text-onBrand p-3 rounded-md flex gap-1 w-fit" variant="paragraph">{card.key}</Typography>
+              <Typography className="bg-brand text-onBrand p-3 rounded-xl flex gap-1 w-fit" variant="paragraph">{card.key}</Typography>
             </CardContent>
           </Card>
         ))}

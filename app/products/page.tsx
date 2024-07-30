@@ -6,17 +6,18 @@ import type { Metadata } from "next";
 import { Link } from "next-view-transitions";
 import Image from "next/image";
 import { Zap, Search, Lightbulb, Brain } from 'lucide-react';
+import LatestProjectSection from "../components/LatestProjectSection";
 
 const getIconForTitle = (title: string) => {
   switch (title.toLowerCase()) {
     case 'boost productivity':
       return <Zap className="w-20 h-20 text-brand" />;
     case 'explore opportunities':
-      return <Search className="w-20 h-20 text-accent" />;
+      return <Search className="w-20 h-20 text-brand" />;
     case 'enhance creativity':
       return <Lightbulb className="w-20 h-20 text-brand" />;
-    case 'improve decision making':
-      return <Brain className="w-20 h-20 text-accent" />;
+    case 'improve decisions':
+      return <Brain className="w-20 h-20 text-brand" />;
     default:
       return null;
   }
@@ -25,10 +26,14 @@ const getIconForTitle = (title: string) => {
 export default function Page() {
   return (
     <div className="flex flex-col max-w-6xl mx-auto gap-10 relative px-0">
-        <Typography className="max-w-xl text-brand mx-auto text-center" variant="heading2">
-         This is a title for the story page with more than a line
-        </Typography>
-      
+      <div className="flex flex-col gap-3">
+          <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
+            Supercharge peoples skills with intelligent and user friendly tools.
+          </Typography>
+          <Typography className="text-center mx-auto max-w-xl" variant="large">
+            We strive to make AI helpful and simple to use, enabling everyone to benefit from its power.
+          </Typography>
+      </div>
       <div className="flex flex-col gap-20 max-w-6xl mx-auto">
         <div className="flex flex-col gap-10">
           <Typography variant="heading3">Our Goal</Typography>
@@ -43,24 +48,7 @@ export default function Page() {
           ))}
         </div>
         </div>
-        <div className="flex flex-col gap-10">
-          <Typography variant="heading3">Our Latest Project</Typography> 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
-          <Image
-          className="mt-auto"
-          unoptimized
-          priority
-          src={"/demo.png"}
-          height={1500}
-          width={1500}
-          alt="thumbnail" />
-          <div className="flex flex-col gap-5 my-auto">
-            <Typography variant="heading3">Problem</Typography>
-            <Typography variant="paragraph">Born in La Réunion, my journey into the digital world started with a focus on marketing and sales.<br/> A few years later, my interest in digital product development transformed into a passion for creating and solving problems with great user experiences.</Typography>
-            <Button className="w-fit" >Discover</Button>
-          </div>
-        </div>
-        </div>
+        <LatestProjectSection />
       </div>
     </div>
   );
