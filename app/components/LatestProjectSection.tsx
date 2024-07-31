@@ -9,7 +9,6 @@ export default function LatestProjectSection() {
     <div className="flex flex-col gap-10">
       <Typography variant="heading3">Latest Project</Typography>
       <div className="flex flex-col md:flex-row shadow-none md:shadow-xl rounded-xl border border-muted">
-      
         <Image
           className="rounded-xl"
           src="/demo.png"
@@ -19,7 +18,6 @@ export default function LatestProjectSection() {
           alt="thumbnail"
           priority
         />
-      
         <div className="flex flex-col gap-5 justify-center p-10">
           <Typography variant="heading3">AskCV.xyz - Get actionable insights from CVs.</Typography>
           <Typography variant="paragraph">Use our intelligent CV tool to benefit from advanced analysis and intelligent content recommendations. Speed up the selection process, save time and find the best talent for your company.</Typography>

@@ -9,9 +9,9 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 export const links = [
     {
-      title: "Engineering",
-      path: "/engineering",
-      name: "engineering",
+      title: "Services",
+      path: "/services",
+      name: "services",
     },
     {
       title: "Products",

@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 export default function HeroSection() {
   return (
     <div className="flex flex-col gap-10">
-      <Typography className="max-w-4xl" variant="heading1">
-        AI <Link href="/engineering"><span className="underline cursor-pointer hover:text-brandVariant">engineering</span></Link> and <Link href="/products"><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
+      <Typography className="max-w-5xl" variant="heading1">
+        AI <Link href="/services"><span className="underline cursor-pointer hover:text-brandVariant">services</span></Link> and <Link href="/products"><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
         <br />
         bring Humans & AI, Together, 
         <br />
