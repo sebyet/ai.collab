@@ -8,16 +8,19 @@ export default function LatestProjectSection() {
   return (
     <div className="flex flex-col gap-10">
       <Typography variant="heading3">Latest Project</Typography>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+      <div className="flex flex-col md:flex-row shadow-none md:shadow-xl rounded-xl border border-muted">
+      
         <Image
-          className="mt-auto rounded-xl"
+          className="rounded-xl"
           src="/demo.png"
-          height={1500}
-          width={1500}
+          objectFit="contain"
+          height={500}
+          width={500}
           alt="thumbnail"
           priority
         />
-        <div className="flex flex-col gap-5 my-auto border border-accent rounded-xl w-full h-full justify-center p-10">
+      
+        <div className="flex flex-col gap-5 justify-center p-10">
           <Typography variant="heading3">AskCV.xyz - Get actionable insights from CVs.</Typography>
           <Typography variant="paragraph">Use our intelligent CV tool to benefit from advanced analysis and intelligent content recommendations. Speed up the selection process, save time and find the best talent for your company.</Typography>
           <Link href={"https://askcv.xyz"}>
