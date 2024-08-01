@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-10 relative px-0">
-      <div className="flex flex-col gap-3">
+    <div className="flex flex-col">
+      <div className="flex flex-col gap-3 py-20">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
             AI can make a real difference and and help people.
           </Typography>
@@ -18,7 +18,7 @@ export default function Page() {
             Driven by a love for technology and helping others, we believe AI can transform businesses and make a real difference.          
           </Typography>
       </div>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 py-20">
         <div className="flex flex-col gap-3">
           <Typography variant="heading3">Problem</Typography>
           <Typography variant="paragraph">

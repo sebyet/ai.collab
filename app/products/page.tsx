@@ -25,8 +25,8 @@ const getIconForTitle = (title: string) => {
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-10 relative px-0">
-      <div className="flex flex-col gap-3">
+    <div className="flex flex-col">
+      <div className="flex flex-col gap-3 py-20">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
             Supercharge peoples skills with intelligent and user friendly tools.
           </Typography>
@@ -34,7 +34,7 @@ export default function Page() {
             We strive to make AI helpful and simple to use, enabling everyone to benefit from its power.
           </Typography>
       </div>
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-20 py-20">
         <div className="flex flex-col gap-10">
           <Typography variant="heading3">Our Goals</Typography>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">

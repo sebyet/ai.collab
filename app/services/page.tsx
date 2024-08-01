@@ -4,8 +4,8 @@ import Format from "./components/Format";
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-20 relative px-0">
-        <div className="flex flex-col gap-3">
+    <div className="flex flex-col">
+        <div className="flex flex-col gap-3 py-20">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
             Bridge the gap between AI technologies and your business operations. 
           </Typography>

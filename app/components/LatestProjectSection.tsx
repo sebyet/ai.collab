@@ -6,9 +6,9 @@ import { Link } from "next-view-transitions";
 
 export default function LatestProjectSection() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 py-20">
       <Typography variant="heading3">Latest Project</Typography>
-      <div className="flex flex-col md:flex-row shadow-none md:shadow-xl rounded-xl border border-muted">
+      <div className="flex flex-col md:flex-row rounded-xl border border-muted">
         <Image
           className="rounded-xl"
           src="/demo.png"

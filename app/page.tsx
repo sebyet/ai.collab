@@ -5,8 +5,8 @@ import VisionSection from "./components/VisionSection";
 
 export default function Index() {
   return (
-    <div className="flex flex-col gap-20 relative">
-      <div className="hidden lg:block absolute right-0 top-0">
+    <div className="flex flex-col relative">
+      <div className="hidden lg:block absolute right-0 top-20">
         <RotatingLogo />
       </div>
       <HeroSection />

@@ -36,7 +36,7 @@ export default function RootLayout({
       <html lang="en" className={`${domine.variable} ${roboto_mono.variable}`}>
         <body className="bg-background flex flex-col min-h-screen overflow-x-hidden text-pretty container">
           <Navbar />
-          <main className="flex-1 flex flex-col overflow-hidden md:overflow-visible pt-10">
+          <main className="flex-1 flex flex-col overflow-hidden md:overflow-visible">
             {children} 
             <Toaster />  
           </main>

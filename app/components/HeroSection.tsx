@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 py-20">
       <Typography className="max-w-5xl" variant="heading1">
         AI <Link href="/services"><span className="underline cursor-pointer hover:text-brandVariant">services</span></Link> and <Link href="/products"><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
         <br />
