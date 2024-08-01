@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             <nav className="flex flex-col py-5 px-0">
                 <ul className="flex w-full justify-between">
                     <li className='cursor pointer'>
-                        <a className='flex flex-col hover:bg-muted py-2 rounded-lg items-center transition active:scale-[.95]' href='/'>    
+                        <a className='flex flex-col rounded-lg items-center transition active:scale-[.95]' href='/'>    
                             <span className='text-2xl text-onBackground font-bold'>apprendrai</span> 
                         </a>
                     </li>
