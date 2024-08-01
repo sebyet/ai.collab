@@ -12,7 +12,7 @@ export async function saveEmail (data: any) {
         })
 
         const { data: existingSubscriptions, error: error1 } = await supabase
-            .from("newsletter")
+            .from("newsletter_apprendrai")
             .select("id")
             .eq("email", email);
 
@@ -23,7 +23,7 @@ export async function saveEmail (data: any) {
             };
         }
 
-        const { data: newsletter, error } = await supabase.from("newsletter").insert([
+        const { data: newsletter, error } = await supabase.from("newsletter_apprendrai").insert([
           {
             email: email,
           },
