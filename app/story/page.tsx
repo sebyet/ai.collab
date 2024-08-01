@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col gap-3 mt-10 md:mt-20 py-20 bg-gray-50 text-brand rounded-xl p-10">
+    <div className="flex flex-col mt-10 md:mt-20">
+      <div className="flex flex-col gap-3 py-20 bg-gray-50 text-brand rounded-xl">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
             AI can make a real difference and and help people.
           </Typography>
@@ -18,7 +18,7 @@ export default function Page() {
             Driven by a love for technology and helping others, we believe AI can transform businesses and make a real difference.          
           </Typography>
       </div>
-      <div className="flex flex-col gap-10 py-20">
+      <div className="flex flex-col gap-10  mt-10 md:mt-20">
         <div className="flex flex-col gap-3">
           <Typography variant="heading3">Problem</Typography>
           <Typography variant="paragraph">
@@ -29,7 +29,7 @@ export default function Page() {
           <Typography variant="heading3">Solution</Typography> 
           <Typography variant="paragraph">
             At Apprendrai, we embrace the fact that the true potential of AI lies not in replacing humans, but in augmenting and enhancing human capabilities. Our mission is to meet these challenges head on, creating AI engineering solutions and products that foster a harmonious and productive relationship between humans and AI.
-           </Typography>
+          </Typography>
         </div>
       </div>
     </div>
