@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col gap-3 py-20">
+      <div className="flex flex-col gap-3 mt-10 md:mt-20 py-20 bg-gray-50 text-brand rounded-xl p-10">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
             AI can make a real difference and and help people.
           </Typography>

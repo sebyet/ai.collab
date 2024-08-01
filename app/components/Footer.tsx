@@ -15,7 +15,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t-[1px] border-border pt-10 md:pt-16">
+    <footer className="border-t-[1px] border-border pt-10 md:pt-16 mt-10 md:mt-20">
       <div className="flex flex-col gap-3 md:flex-row md:justify-between items-center border-border border-b-[1px] pb-10 md:pb-16 mb-12">
           <span className='text-5xl text-onBackground font-bold'>
             apprendrai

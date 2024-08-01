@@ -26,30 +26,29 @@ const getIconForTitle = (title: string) => {
 export default function Page() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col gap-3 py-20">
-          <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
+      <div className="flex flex-col gap-3 py-20 bg-gray-50 text-brand rounded-xl  mt-10 md:mt-20">
+          <Typography className="max-w-4xl mx-auto text-center" variant="heading2">
             Supercharge peoples skills with intelligent and user friendly tools.
           </Typography>
           <Typography className="text-center mx-auto max-w-xl" variant="large">
             We strive to make AI helpful and simple to use, enabling everyone to benefit from its power.
           </Typography>
       </div>
-      <div className="flex flex-col gap-20 py-20">
-        <div className="flex flex-col gap-10">
+      
+        <div className="flex flex-col gap-10  mt-10 md:mt-20">
           <Typography variant="heading3">Our Goals</Typography>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-          {data.map((card, index) => (
-            <div className="flex flex-col gap-5 items-center text-center" key={index}>
-              {getIconForTitle(card.title)}
-              <Typography variant='heading4'>{card.title}</Typography>
-              <Typography variant="paragraph">{card.description}</Typography>
-              
-            </div>
-          ))}
-        </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+            {data.map((card, index) => (
+              <div className="flex flex-col gap-5 rounded-xl items-center text-center bg-muted p-10" key={index}>
+                {getIconForTitle(card.title)}
+                <Typography variant='heading4'>{card.title}</Typography>
+                <Typography variant="paragraph">{card.description}</Typography>   
+              </div>
+            ))}
+          </div>
         </div>
         <LatestProjectSection />
-      </div>
+     
     </div>
   );
 }

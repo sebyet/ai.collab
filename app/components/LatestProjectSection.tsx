@@ -6,15 +6,15 @@ import { Link } from "next-view-transitions";
 
 export default function LatestProjectSection() {
   return (
-    <div className="flex flex-col gap-10 py-20">
+    <div className="flex flex-col gap-10 mt-10 md:mt-20">
       <Typography variant="heading3">Latest Project</Typography>
-      <div className="flex flex-col md:flex-row rounded-xl border border-muted">
+      <div className="flex flex-col md:flex-row rounded-xl bg-gray-50">
         <Image
           className="rounded-xl"
           src="/demo.png"
           objectFit="contain"
           height={500}
-          width={500}
+          width={1000}
           alt="thumbnail"
           priority
         />

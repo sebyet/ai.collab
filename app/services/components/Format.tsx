@@ -22,7 +22,7 @@ const data = [
 
 const Format = () => {
   return (
-    <div className="flex flex-col gap-10 py-20">
+    <div className="flex flex-col gap-10 mt-10 md:mt-20">
       <Typography variant="heading3">Delivered in a format that works</Typography>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {data.map((card, index) => (
