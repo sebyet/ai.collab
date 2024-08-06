@@ -4,7 +4,7 @@ import { NewsletterForm } from "./components/NewsletterForm";
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-10 mt-10 md:mt-20 bg-gray-50 rounded-xl py-20">
+    <div className="flex flex-col gap-10 mt-10 md:mt-20 bg-gray-100 rounded-xl py-20">
        <div className="flex flex-col gap-3 text-brand">
           <Typography className="max-w-3xl mx-auto text-center" variant="heading2">
             Lets think about AI together!

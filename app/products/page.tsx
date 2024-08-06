@@ -26,7 +26,7 @@ const getIconForTitle = (title: string) => {
 export default function Page() {
   return (
     <div className="flex flex-col mt-10 md:mt-20">
-      <div className="flex flex-col gap-3 py-20 bg-gray-50 text-brand rounded-xl">
+      <div className="flex flex-col gap-3 py-20 bg-gray-100 text-brand rounded-xl">
           <Typography className="max-w-4xl mx-auto text-center" variant="heading2">
             Supercharge peoples skills with intelligent and user friendly tools.
           </Typography>

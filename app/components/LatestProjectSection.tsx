@@ -8,7 +8,7 @@ export default function LatestProjectSection() {
   return (
     <div className="flex flex-col gap-10 mt-10 md:mt-20">
       <Typography variant="heading3">Latest Project</Typography>
-      <div className="flex flex-col md:flex-row rounded-xl bg-gray-50">
+      <div className="flex flex-col md:flex-row rounded-xl bg-gray-100">
         <Image
           className="rounded-xl"
           src="/demo.png"
