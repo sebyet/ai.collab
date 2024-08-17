@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
+import Logo from '@/app/components/Logo';
 export const links = [
     {
       title: "Services",
@@ -33,12 +34,12 @@ const Navbar: React.FC = () => {
     return (
         <>
             <nav className="flex flex-col py-5 px-0">
-                <ul className="flex w-full justify-between">
-                    <li className='cursor pointer'>
-                        <a className='flex flex-col rounded-lg items-center transition active:scale-[.95]' href='/'>    
-                            <span className='text-2xl text-onBackground font-bold'>apprendrai</span> 
-                        </a>
-                    </li>
+                <ul className="flex w-full items-center justify-between">
+                    <Link href={"/"}>
+                        <li className='cursor pointer active:scale-[.95] transition-all'>
+                            <Logo/>
+                        </li>
+                    </Link>
                     <ul className="gap-5 hidden md:flex mx-3 items-center">
                     {links.map(({ path, name, title }) => {
                         const isActive = path === lastPath;
