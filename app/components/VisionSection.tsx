@@ -3,9 +3,9 @@ import { Typography } from "@/components/ui/typography";
 
 export default function VisionSection() {
   return (
-    <div className="flex flex-col gap-10 mt-10 md:mt-20">
-      <Typography className="text-center font-medium text-4xl md:text-6xl md:leading-[85px]" variant="paragraph">
-        We see a future where humans continually adapt to the evolution of AI, enabling strong cooperation that supercharges skills and unlocks new possibilities.
+    <div className="flex flex-col gap-10 mt-10 md:mt-32 text-brand">
+      <Typography className="font-medium text-pretty text-4xl md:text-6xl md:leading-[85px]" variant="paragraph">
+        In a world where AI is revolutionizing industries, we believe in a balanced approach, bringing humans and AI together to create sustainable, transformative growth. 
       </Typography>
     </div>
   );

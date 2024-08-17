@@ -4,34 +4,25 @@ import { data } from "@/data/home";
 import Link from "next/link";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col gap-10">
-      <Typography className="max-w-5xl" variant="heading1">
-        AI <Link href="/services"><span className="underline cursor-pointer hover:text-brandVariant">services</span></Link> and <Link href="/products"><span className="underline cursor-pointer hover:text-brandVariant">products</span></Link> that,
-        <br />
-        bring Humans & AI, Together, 
-        <br />
-        Forward.
-      </Typography>
-      <div className="max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
-        {data.map((card, index) => (
-          <Card className="border border-brand rounded-xl flex flex-col p-4 justify-between" key={index}>
-            <CardHeader className='gap-5'>
-              <div className='w-full flex flex-col gap-3'>
-                <Typography variant='heading4'>{card.title}</Typography>
-                <Typography variant="paragraph">{card.description}</Typography>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <Link href={card.href}>
-                <Button className="w-full" variant={index === 0 ? "default" : "outline"}>{card.callToAction}</Button>
-              </Link>
-            </CardContent>
-          </Card>
-        ))}
+    <>
+    <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl">
+      <div className="relative rounded-xl h-full">
+        <Image unoptimized priority src="/home.jpg" alt="" fill className="rounded-xl object-cover" />
+        <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-3 justify-end">
+        <Typography className="max-w-5xl text-onBrand" variant="heading1">
+          AI services that bring,
+          <br />
+          Humans & AI, Together, Forward.
+          <br />
+          Accelerating Business Growth.
+        </Typography>
+        </div>
       </div>
-    </div>
+    </AspectRatio></>
   );
 }

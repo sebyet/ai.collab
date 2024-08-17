@@ -9,7 +9,7 @@ export function FooterCTA() {
   const pathname = usePathname();
 
   return (
-    <div className="gap-10 border border-border rounded-xl text-center py-14 mt-10 md:mt-20 flex items-center flex-col bg-brand text-onBrand">
+    <div className="gap-10 border border-border rounded-xl text-center py-14 mt-10 md:mt-32 flex items-center flex-col bg-brand text-onBrand">
       <Typography variant="heading3" className="text-6xl lg:text-8xl font-medium">
         Unlock with AI,
         <br />
