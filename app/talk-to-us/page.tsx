@@ -22,7 +22,7 @@ export default function Page() {
   
       <div className="w-full md:w-[500px] mx-auto flex flex-col gap-5">
         <Typography className="text-center mx-auto max-w-xl" variant="large">
-          If you prefer to be recontacted, leave us your email address.
+          If you prefer to be recontacted, please leave us your e-mail address.
         </Typography>
         <NewsletterForm/>
       </div>
