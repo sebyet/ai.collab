@@ -1,5 +1,5 @@
 import { Typography } from "@/components/ui/typography";
-import Benefit from "./components/Benefit";
+import Benefit from "./components/Projects";
 import Format from "./components/Format";
 
 const data = [

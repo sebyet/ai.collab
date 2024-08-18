@@ -7,21 +7,22 @@ import { usePathname } from "next/navigation";
 
 export function FooterCTA() {
   const pathname = usePathname();
-
+  if (pathname.includes("talk-to-us")) return null;
   return (
-    <div className="gap-10 border border-border rounded-xl text-center py-14 mt-10 md:mt-32 flex items-center flex-col bg-brand text-onBrand">
-      <Typography variant="heading3" className="text-6xl lg:text-8xl font-medium">
-        Unlock with AI,
+    <div className="gap-10 border border-border rounded-xl text-center px-10 py-14 mt-10 md:mt-32 flex items-center flex-col bg-brand text-onBrand">
+      <Typography variant="heading3" className="text-6xl lg:text-8xl font-medium text-pretty">
+        Start with AI Now
         <br />
-        A Better Yourself.
+        Book a Free Call
       </Typography>
-      {!pathname.includes("talk-to-us") &&
+     
         <Link href="/talk-to-us">
           <Button size="lg" variant="accent">
-            Talk to us
+            Book a Free Call
           </Button>
         </Link>
-      }
+    
     </div>
+  
   );
 }

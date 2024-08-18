@@ -1,20 +1,34 @@
 import { Typography } from "@/components/ui/typography";
-import Benefit from "../components/Benefit";
+import Benefit from "../components/Projects";
 import Format from "../components/Format";
+import HeroSection from "../components/Hero";
+import Projects from "../components/Projects";
+
+export const data = [
+  {
+    title: "Business needs",
+    description: "Identify business objectives, specific needs, and AI opportunities to create a focused and effective AI strategy."
+  },
+  {
+    title: "Incremental Development",
+    description: "Develop an initial prototype for early validation, followed by step-by-step deliverables to ensure gradual and manageable implementation."
+  },
+  {
+    title: "Review and Improvement",
+    description: "Continuously assess the AI solution's performance and impact, making iterative improvements based on feedback and performance metrics."
+  }
+];
 
 export default function Page() {
   return (
-    <div className="flex flex-col mt-10 md:mt-20">
-        <div className="flex flex-col gap-3 py-20 bg-gray-100 text-brand rounded-xl">
-          <Typography className="max-w-4xl mx-auto text-center" variant="heading2">
-            Bridge the gap between AI technologies and your business. 
-          </Typography>
-          <Typography className="text-center mx-auto max-w-xl" variant="large">
-            We help you understand, use and integrate AI into your daily tasks and strategic plans.
-          </Typography>
-        </div>
-        <Benefit/>
-        <Format data={[]}/>
+    <div className="flex flex-col">
+     <HeroSection 
+        imageSrc={"/service4.jpg"} 
+        imageAlt={""} 
+        title={"Create tailored AI solutions to meet your unique business challenges"} 
+        subtitle={"ACCELERATE GROWTH"}/> 
+      <Projects/>
+      <Format data={data}/>
     </div>
   );
 }

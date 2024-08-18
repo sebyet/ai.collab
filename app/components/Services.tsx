@@ -56,7 +56,7 @@ export default function Services() {
       <Typography variant="heading3">Services</Typography>
       <div className="flex flex-col gap-10">
         <ServiceCard 
-          href="/services"
+          href="/services/discovery"
           imageSrc={"./service1.jpg"} 
           imageAlt={""} 
           title={"AI Discovery"} 
@@ -64,7 +64,7 @@ export default function Services() {
           alignItems="items-start"    
         />
         <ServiceCard 
-          href="/services"
+          href="/services/coaching"
           imageSrc={"./service2.jpg"} 
           imageAlt={""} 
           title={"AI Coaching"} 
@@ -72,15 +72,15 @@ export default function Services() {
           alignItems="items-end"    
         />
         <ServiceCard 
-          href="/services"
+          href="/services/conseil"
           imageSrc={"./service3.jpg"} 
           imageAlt={""} 
-          title={"AI Consulting"} 
+          title={"AI Conseil"} 
           description={"Get expert advice on integrating AI into your organisation."}    
           alignItems="items-start"    
         />
         <ServiceCard 
-          href="/services"
+          href="/services/development"
           imageSrc={"./service4.jpg"} 
           imageAlt={""} 
           title={"AI Development"} 

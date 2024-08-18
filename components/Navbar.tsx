@@ -67,19 +67,8 @@ const Navbar: React.FC = () => {
                         })}
                     </ul>
                     <ul className="gap-5 hidden md:flex mx-3 items-center">
-                    {links.map(({ path, name, title }) => {
-                        const isActive = path.includes(lastPath);
-
-                        return (
-                            <li key={name}>
-                                <Link href={path}>
-                                    <Button size="link" variant="link" className={cn(isActive && "text-accent hover:text-accentVariant")}>{title}</Button>
-                                </Link>
-                            </li>
-                        );
-                    })}
                      <Link href="/talk-to-us">
-                        <Button variant="accent">Talk to us</Button>
+                        <Button variant="accent">Book a free call</Button>
                     </Link>
            
                     </ul>
