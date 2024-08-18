@@ -49,3 +49,17 @@
     --ring: 240 4.9% 83.9%;
   }
 }
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-carousel {
+  display: flex;
+  animation: carousel 20s linear infinite;
+}

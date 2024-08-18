@@ -4,23 +4,16 @@ import { cn } from '@/lib/utils';
 import { Blocks, ClipboardList, Lightbulb, ScanSearch } from 'lucide-react';
 import React from 'react';
 
-const data = [
-  {
-    title: "Discover",
-    description: "We evaluate your organization's AI awareness level and talk about your needs.",
-  },
-  {
-    title: "Act",
-    description: "We act in three areas: teaching, integrating, or building AI solutions.",
-  },
-  {
-    title: "Refine",
-    description: "We engage in collaborative sessions to refine and improve the implemented AI initiatives.",
-  },
-];
+type CardData = {
+  title: string;
+  description: string;
+};
 
+type FormatProps = {
+  data: CardData[];
+};
 
-const Format = () => {
+const Format: React.FC<FormatProps> = ({ data }) => {
   return (
     <div className="flex flex-col gap-10 mt-10 md:mt-20">
       <Typography variant="heading3">Delivered in a format that works</Typography>

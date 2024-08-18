@@ -8,19 +8,32 @@ import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import Logo from '@/app/components/Logo';
-export const links = [
+export const linksServices = [
     {
-      title: "Services",
-      path: "/services",
-      name: "services",
+        title: "Discovery",
+        path: "/services/discovery",
+        name: "AI Discovery Services",
     },
     {
-      title: "Products",
-      path: "/products",
-      name: "products",
+        title: "Coaching",
+        path: "/services/coaching",
+        name: "AI Coaching Services",
     },
     {
-      title: "Story",
+        title: "Conseil",
+        path: "/services/conseil",
+        name: "AI Conseil Services",
+    },
+    {
+        title: "Development",
+        path: "/services/development",
+        name: "AI Developmennt Services",
+    },
+  ];
+
+  export const links = [
+    {
+      title: "Our Story",
       path: "/story",
       name: "story",
     },
@@ -29,7 +42,7 @@ export const links = [
 const Navbar: React.FC = () => {
     const pathname = usePathname();
 
-  const lastPath = `/${pathname.split("/").pop()}`;
+    const lastPath = pathname.split("/").filter(Boolean).pop() || '';
 
     return (
         <>
@@ -40,9 +53,22 @@ const Navbar: React.FC = () => {
                             <Logo/>
                         </li>
                     </Link>
+                    <ul className="gap-5 hidden md:flex mx-3 items-center bg-muted rounded-xl px-5 py-3">
+                        {linksServices.map(({ path, name, title }) => {
+                            const isActive = path.includes(lastPath) && pathname !== "/";
+
+                            return (
+                                <li key={name}>
+                                    <Link href={path}>
+                                        <Button size="link" variant="link" className={cn(isActive && "text-accent hover:text-accentVariant")}>{title}</Button>
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
                     <ul className="gap-5 hidden md:flex mx-3 items-center">
                     {links.map(({ path, name, title }) => {
-                        const isActive = path === lastPath;
+                        const isActive = path.includes(lastPath);
 
                         return (
                             <li key={name}>
@@ -52,10 +78,12 @@ const Navbar: React.FC = () => {
                             </li>
                         );
                     })}
-                    <Link href="/talk-to-us">
-                     <Button variant="accent">Talk to us</Button>
-                </Link>
-                </ul>
+                     <Link href="/talk-to-us">
+                        <Button variant="accent">Talk to us</Button>
+                    </Link>
+           
+                    </ul>
+                   
               
                 </ul>
             </nav>

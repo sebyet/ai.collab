@@ -1,21 +1,6 @@
 import { Typography } from "@/components/ui/typography";
-import Benefit from "./components/Benefit";
-import Format from "./components/Format";
-
-const data = [
-  {
-    title: "Discover",
-    description: "We evaluate your organization's AI awareness level and talk about your needs.",
-  },
-  {
-    title: "Act",
-    description: "We act in three areas: teaching, integrating, or building AI solutions.",
-  },
-  {
-    title: "Refine",
-    description: "We engage in collaborative sessions to refine and improve the implemented AI initiatives.",
-  },
-];
+import Benefit from "../components/Benefit";
+import Format from "../components/Format";
 
 export default function Page() {
   return (
@@ -29,7 +14,7 @@ export default function Page() {
           </Typography>
         </div>
         <Benefit/>
-        <Format data={data}/>
+        <Format data={[]}/>
     </div>
   );
 }
