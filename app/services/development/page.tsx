@@ -4,7 +4,7 @@ import Format from "../components/Format";
 import HeroSection from "../components/Hero";
 import Projects from "../components/Projects";
 
-export const data = [
+const data = [
   {
     title: "Business needs",
     description: "Identify business objectives, specific needs, and AI opportunities to create a focused and effective AI strategy."
