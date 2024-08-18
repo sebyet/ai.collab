@@ -26,7 +26,7 @@ export default function Page() {
       <HeroSection 
         imageSrc={"/service1.jpg"} 
         imageAlt={""} 
-        title={"Explore the world of AI and its potential for your business"} 
+        title={"Discover the world of AI and explore its potential for your business"} 
         subtitle={"MAKE THE STEP"}/>
       <Questions/>
       <Format data={data}/>
