@@ -20,7 +20,7 @@ export default function HeroSection() {
             <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">Streamlined journey</span>
           </div>
           <Typography className="max-w-5xl text-onBrand" variant="heading1"> 
-            Automated AI agents that elevates customer satisfaction.
+            AI services that elevates customer satisfaction.
           </Typography>
           <Button className="w-fit" size="lg" variant="outline">
             Discover the use cases for your business via a free call

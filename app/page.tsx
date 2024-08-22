@@ -1,5 +1,5 @@
 import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
+ import Services from "./components/Services";
 import VisionSection from "./components/VisionSection";
 
 export default function Index() {

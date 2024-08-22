@@ -26,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
   <Link href={href}>
-    <div className="relative rounded-xl h-72 hover:translate-x-1 transition-all ease-in-out cursor-pointer">
+    <div className="relative rounded-xl h-[800px] hover:translate-x-1 transition-all ease-in-out cursor-pointer">
       <Image
         unoptimized
         priority
@@ -36,7 +36,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         className="rounded-xl object-cover"
       />
       <div className={`flex flex-col justify-end ${alignItems} relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full`}>
-        <div className="max-w-[700px] w-fit text-brand bg-background rounded-xl p-5 flex flex-col gap-3">
+        <div className="w-full text-brand bg-background rounded-xl p-5 flex flex-col gap-3">
           <Typography variant="heading3">
             {title}
           </Typography>
@@ -54,7 +54,7 @@ export default function Services() {
   return (
     <div className="flex flex-col gap-10 mt-10 md:mt-32">
       <Typography variant="heading3">Services</Typography>
-      <div className="flex flex-col gap-10">
+      <div className="grid grid-cols-2 gap-5">
         <ServiceCard 
           href="/services/discovery"
           imageSrc={"./service1.jpg"} 
@@ -71,22 +71,7 @@ export default function Services() {
           description={"Master popular AI tools through hands-on training."}    
           alignItems="items-end"    
         />
-        <ServiceCard 
-          href="/services/conseil"
-          imageSrc={"./service3.jpg"} 
-          imageAlt={""} 
-          title={"AI Conseil"} 
-          description={"Get expert advice on integrating AI into your organisation."}    
-          alignItems="items-start"    
-        />
-        <ServiceCard 
-          href="/services/development"
-          imageSrc={"./service4.jpg"} 
-          imageAlt={""} 
-          title={"AI Development"} 
-          description={"Create tailored AI solutions to meet your business challenges."}    
-          alignItems="items-end"    
-        />
+       
         
      
        
