@@ -13,14 +13,18 @@ export default function HeroSection() {
     <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl">
       <div className="relative rounded-xl h-full">
         <Image unoptimized priority src="/home.jpg" alt="" fill className="rounded-xl object-cover" />
-        <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-3 justify-end">
-        <Typography className="max-w-5xl text-onBrand" variant="heading1">
-          AI services that bring,
-          <br />
-          Humans & AI, Together, Forward.
-          <br />
-          Accelerating Business Growth.
-        </Typography>
+        <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-5 justify-end">
+          <div className="flex flex-row gap-3">
+            <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">24/7 availability</span>
+            <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">Personalized experience</span>
+            <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">Streamlined journey</span>
+          </div>
+          <Typography className="max-w-5xl text-onBrand" variant="heading1"> 
+            Automated AI agents that elevates customer satisfaction.
+          </Typography>
+          <Button className="w-fit" size="lg" variant="outline">
+            Discover the use cases for your business via a free call
+          </Button>
         </div>
       </div>
     </AspectRatio></>
