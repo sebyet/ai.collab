@@ -10,24 +10,19 @@ import { usePathname } from 'next/navigation';
 import Logo from '@/app/components/Logo';
 export const linksServices = [
     {
-        title: "Discovery",
-        path: "/services/discovery",
+        title: "Experience personalisation",
+        path: "/services/personalised-experience",
         name: "AI Discovery Services",
     },
     {
-        title: "Coaching",
-        path: "/services/coaching",
+        title: "Autonomous assistants/agents",
+        path: "/services/autonomous-agents",
         name: "AI Coaching Services",
     },
     {
-        title: "Conseil",
-        path: "/services/conseil",
+        title: "AI Integration & Dev",
+        path: "/services/integration",
         name: "AI Conseil Services",
-    },
-    {
-        title: "Development",
-        path: "/services/development",
-        name: "AI Developmennt Services",
     },
   ];
 
@@ -48,25 +43,12 @@ const Navbar: React.FC = () => {
         <>
             <nav className="flex flex-col py-5 px-0">
                 <ul className="flex w-full items-center justify-between">
-                    <Link href={"/"}>
-                        <li className='cursor pointer active:scale-[.95] transition-all'>
-                            <Logo/>
-                        </li>
+                    <Link className='text-3xl font-semibold' href={"/"}>
+                        <span className='text-brand'>AI</span>
+                        <span className='text-accent'>.</span>
+                        <span className='text-brand'>Collab</span>
                     </Link>
-                    <ul className="gap-5 hidden md:flex mx-3 items-center bg-muted rounded-xl px-5 py-3">
-                        {linksServices.map(({ path, name, title }) => {
-                            const isActive = path.includes(lastPath) && pathname !== "/";
-
-                            return (
-                                <li key={name}>
-                                    <Link href={path}>
-                                        <Button size="link" variant="link" className={cn(isActive && "text-accent hover:text-accentVariant")}>{title}</Button>
-                                    </Link>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                    <ul className="gap-5 hidden md:flex mx-3 items-center">
+                    <ul className="gap-5 flex md:flex mx-3 items-center">
                      <Link href="/talk-to-us">
                         <Button variant="accent">Book a free call</Button>
                     </Link>

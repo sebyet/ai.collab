@@ -1,32 +1,58 @@
-// app/components/Hero.tsx
 import { Typography } from "@/components/ui/typography";
-import { data } from "@/data/home";
 import Link from "next/link";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <>
-    <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl">
-      <div className="relative rounded-xl h-full">
-        <Image unoptimized priority src="/home.jpg" alt="" fill className="rounded-xl object-cover" />
-        <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-5 justify-end">
-          <div className="flex flex-row gap-3">
-            <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">24/7 availability</span>
-            <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">Personalized experience</span>
-            <span className="p-3 w-fit bg-accent text-brand text-md rounded-full">Streamlined journey</span>
-          </div>
-          <Typography className="max-w-5xl text-onBrand" variant="heading1"> 
-            AI services that elevates customer satisfaction.
+      <div className="flex flex-col gap-3 md:hidden">
+        <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl mt-10">
+          <Image
+            unoptimized
+            priority
+            src="/home.jpg"
+            alt="AI Solutions"
+            fill
+            className="rounded-xl object-cover"
+          />
+        </AspectRatio>
+        <div className="flex flex-col gap-3">
+          <Typography className="text-brand" variant="heading1">
+            AI Solutions to elevate your Customer Satisfaction
           </Typography>
-          <Button className="w-fit" size="lg" variant="outline">
-            Discover the use cases for your business via a free call
-          </Button>
+          <Link href="/talk-to-us">
+            <Button className="w-full text-wrap" size="lg" variant="accent">
+              Discover the best use cases for your business via a free call
+            </Button>
+          </Link>
         </div>
       </div>
-    </AspectRatio></>
+      <div className="hidden md:flex">
+        <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl mt-10">
+          <div className="relative rounded-xl h-full">
+            <Image
+              unoptimized
+              priority
+              src="/home.jpg"
+              alt="AI Solutions"
+              fill
+              className="rounded-xl object-cover"
+            />
+            <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-5 justify-end">
+              <Typography className="max-w-5xl text-onBrand" variant="heading1">
+                AI Solutions to elevate your Customer Satisfaction
+              </Typography>
+              <Link href="/talk-to-us">
+                <Button className="w-fit" size="lg" variant="accent">
+                  Discover the best use cases for your business via a free call
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </AspectRatio>
+      </div>
+    </>
   );
 }
