@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
                         <span className='text-brand'>Collab</span>
                     </Link>
                     <ul className="gap-5 flex md:flex mx-3 items-center">
-                     <Link href="/talk-to-us">
+                     <Link href="/#call">
                         <Button variant="accent">Book a free call</Button>
                     </Link>
            
