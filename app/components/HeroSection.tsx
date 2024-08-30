@@ -24,7 +24,7 @@ export default function HeroSection() {
           </Typography>
           <Link href="/talk-to-us">
             <Button className="w-full text-wrap" size="lg" variant="accent">
-              You have project in mind? Let's talk about it!
+              An AI Project in Mind? Book a Free Call
             </Button>
           </Link>
         </div>
