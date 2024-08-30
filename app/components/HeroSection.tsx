@@ -20,11 +20,11 @@ export default function HeroSection() {
         </AspectRatio>
         <div className="flex flex-col gap-3">
           <Typography className="text-brand" variant="heading1">
-            Expand your AI project capacity on demand
+            AI Solutions that pushes your business forward
           </Typography>
           <Link href="/talk-to-us">
             <Button className="w-full text-wrap" size="lg" variant="accent">
-              You do not have enough capacity? Work with us!
+              You have project in mind? Let's talk about it!
             </Button>
           </Link>
         </div>
@@ -42,12 +42,11 @@ export default function HeroSection() {
             />
             <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-5 justify-end">
               <Typography className="max-w-5xl text-onBrand" variant="heading1">
-                Expand your AI project capacity.<br></br>
-                Accelerate your growth.
+                AI solutions that push your business forward
               </Typography>
               <Link href="/#call">
                 <Button className="w-fit" size="lg" variant="accent">
-                You do not have enough capacity? Work with us!
+                An AI Project in Mind? Book a Free Call
                 </Button>
               </Link>
             </div>
