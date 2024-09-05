@@ -14,16 +14,17 @@ export default function Icon() {
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 24,
+          fontSize: 16,
           background: 'white',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          color: '#ffc300'
         }}
       >
-        <span className='text-accent'>AI</span>
+        <span>AI</span>
       </div>
     ),
     // ImageResponse options
