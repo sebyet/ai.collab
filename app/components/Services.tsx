@@ -47,7 +47,7 @@ function ServiceCard({
         </div>
       </div>
       <div className="hidden md:flex">
-        <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl">
+        <div className="bg-gray-50 rounded-xl relative h-[600px]">
           <Image
             unoptimized
             priority
@@ -62,7 +62,7 @@ function ServiceCard({
             <div className="w-full text-brand bg-background rounded-xl p-5 flex flex-col gap-3">
               <Typography variant="heading3">{title}</Typography>
               <Typography variant="paragraph">{description}</Typography>
-              <div className="flex flex-row flex-wrap gap-5">
+              <div className="flex flex-row flex-wrap gap-3">
                 {keyPoints.map((point: string, index: number ) => (
                   <div key={index} className="px-5 py-3 rounded-full bg-accent text-onAccent text-sm">
                     {point}
@@ -71,7 +71,7 @@ function ServiceCard({
               </div>
             </div>
           </div>
-        </AspectRatio>
+        </div>
       </div>
     </>
   );
@@ -81,14 +81,14 @@ export default function Services() {
   return (
     <div className="flex flex-col gap-10 mt-10 md:mt-32">
       <Typography variant="heading3">Services</Typography>
-      <div className="flex flex-col gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <ServiceCard 
           imageSrc="./service1.jpg"
           imageAlt=""
           title="AI Automations"
-          description="Thanks to our business experience, we are particularly adept at designing automation workflows and developing autonomous agents. This expertise helps streamline processes and improve efficiency, ensuring that solutions are not only technically robust, but also aligned with your business objectives."
+          description="We design robuts automation workflows and autonomous agents aligned with your business objectives."
           keyPoints={
-            ["Autonomous Agent", "Chatbot", "Voice assistant"]
+            ["Autonomous Agent", "Chatbot"]
           }
           alignItems="items-start"
         />
@@ -96,20 +96,10 @@ export default function Services() {
           imageSrc="./service3.jpg"
           imageAlt=""
           title="AI Applications"
-          description="Using leading-edge technologies and programming frameworks, we create tailor-made systems that offer unrivalled flexibility, scalability and control. Our solid technical expertise ensures that these solutions are optimized for efficiency and can integrate seamlessly with your existing infrastructure, providing precisely what your business needs."
+          description="We create scalable tailor-made AI first applications that offer an enjoyable user experience."
           alignItems="items-end"
           keyPoints={
             ["AI Apps", "AI Custom Integration"]
-          }
-        />
-        <ServiceCard 
-          imageSrc="./service4.jpg"
-          imageAlt=""
-          title="On demand & scalable support"
-          description="We offer flexible, responsive support tailored to your project needs, whether starting from scratch or supporting ongoing initiatives. This approach guarantees flexibility and quality assurance, leaving you free to concentrate on your core business."
-          alignItems="items-start"
-          keyPoints={
-            ["Agile", "Context focused"]
           }
         />
       </div>

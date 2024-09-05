@@ -7,7 +7,7 @@ import { state } from "./state"
 
 
 const buttonVariants = cva(
-  "inline-flex items-center transition justify-center whitespace-nowrap rounded-xl",
+  "inline-flex items-center transition justify-center rounded-xl text-wrap",
   {
     variants: {
       variant: {

@@ -42,11 +42,11 @@ export default function HeroSection() {
             />
             <div className="relative z-10 bg-black bg-opacity-50 rounded-xl p-5 md:p-10 h-full flex flex-col gap-5 justify-end">
               <Typography className="max-w-5xl text-onBrand" variant="heading1">
-                AI solutions that push your business forward
+                We automate repetitive tasks and inefective business processes using AI to let you express your true value.
               </Typography>
               <Link href="/#call">
                 <Button className="w-fit" size="lg" variant="accent">
-                An AI Project in Mind? Book a Free Call
+                  Lets discover together how AI can help you.
                 </Button>
               </Link>
             </div>
