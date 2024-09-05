@@ -11,18 +11,16 @@ const Hero = () => {
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-5 text-center">
         <Typography className="max-w-[600px] mx-auto border border-accent px-5 py-3 rounded-full" variant="large">
-          Focus on key decisions, where your true value lies.
+          Focus on what you do best, no matter your company's size.
         </Typography>
         <Typography className='max-w-[1000px] mx-auto' variant="heading1">
           Using AI, we automate repetitive tasks & boost business processes.
         </Typography>
-        
-          <Link href="/#call">
-            <Button className="w-fit" size="lg" variant="default">
-              Lets discover use cases together in a 15min call.
-            </Button>
-          </Link>
-       
+        <Link href="/#call">
+          <Button className="w-fit" size="lg" variant="default">
+            Lets discover use cases together in a 15min call.
+          </Button>
+        </Link>
       </div>
       <Image
         className="mx-auto rounded-xl"

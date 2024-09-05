@@ -8,9 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Typography } from "@/components/ui/typography"
-import Image from "next/image"
-import { Link } from "next-view-transitions"
-import { Button } from "@/components/ui/button"
 
 const items = [
   { target: "For Marketing", text: "AI-powered sentiment analysis scans social media to gauge public opinion on campaigns, enabling real-time strategy adjustments." },
