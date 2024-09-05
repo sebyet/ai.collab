@@ -14,7 +14,7 @@ export default function Icon() {
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 16,
+          fontSize: 14,
           background: '#001d3d',
           width: '100%',
           height: '100%',
@@ -24,7 +24,7 @@ export default function Icon() {
           color: '#ffc300'
         }}
       >
-        <span>AIC</span>
+        <span>AI</span>
       </div>
     ),
     // ImageResponse options
