@@ -24,7 +24,7 @@ export default function Icon() {
           color: '#ffc300'
         }}
       >
-        <span>AI.C</span>
+        <span>AIC</span>
       </div>
     ),
     // ImageResponse options
