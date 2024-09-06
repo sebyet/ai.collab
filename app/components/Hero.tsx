@@ -11,7 +11,7 @@ const Hero = () => {
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-5 text-center">
         <Typography className="max-w-[600px] mx-auto border border-accent px-5 py-3 rounded-full" variant="large">
-          Focus on what you do best, no matter your companys size.
+          Focus on what you do best<span className='hidden md:inline-block'>, no matter your companys size.</span>
         </Typography>
         <Typography className='max-w-[1000px] mx-auto' variant="heading1">
           Using AI, we automate repetitive tasks & boost business processes.
