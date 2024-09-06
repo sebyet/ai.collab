@@ -23,7 +23,7 @@ const roboto_mono = Roboto_Mono({
 })
 export const metadata: Metadata = {
   title: "AI.Collabs",
-  description: "Ai courses to supercharge your skills",
+  description: "Let us automate your processes using AI, that you can focus on what you do best.",
 };
 
 export default function RootLayout({
