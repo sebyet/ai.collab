@@ -81,7 +81,7 @@ export default function Services() {
   return (
     <div className="flex flex-col gap-5 md:gap-10 mt-10 md:mt-32">
       <Typography variant="heading3">Services</Typography>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-center md:text-left">
         <ServiceCard 
           imageSrc="./service1.jpg"
           imageAlt=""
