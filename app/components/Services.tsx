@@ -25,29 +25,7 @@ function ServiceCard({
 }: ServiceCardProps) {
   return (
     <>
-      <div className="flex flex-col gap-3 md:hidden">
-        <AspectRatio ratio={16 / 9} className="bg-gray-50 rounded-xl md:hidden">
-          <Image
-            unoptimized
-            priority
-            src={imageSrc}
-            alt={imageAlt}
-            fill
-            className="rounded-xl object-cover"
-          />
-        </AspectRatio>
-        <div className="w-full text-brand bg-background rounded-xl flex flex-col gap-3">
-          <Typography variant="heading3">{title}</Typography>
-          <Typography variant="paragraph">{description}</Typography>
-          <Link className="w-full" href="/talk-to-us">
-            <Button className="w-full" variant="default">
-              Learn more via a free call
-            </Button>
-          </Link>
-        </div>
-      </div>
-      <div className="hidden md:flex">
-        <div className="bg-gray-50 rounded-xl relative h-[600px]">
+        <div className="bg-gray-50 rounded-xl relative h-[500px] md:h-[600px]">
           <Image
             unoptimized
             priority
@@ -64,7 +42,7 @@ function ServiceCard({
               <Typography variant="paragraph">{description}</Typography>
               <div className="flex flex-row flex-wrap gap-3">
                 {keyPoints.map((point: string, index: number ) => (
-                  <div key={index} className="px-5 py-3 rounded-full bg-accent text-onAccent text-sm">
+                  <div key={index} className="px-5 py-3 w-full md:w-fit rounded-full bg-accent text-onAccent text-sm">
                     {point}
                   </div>
                 ))}
@@ -72,7 +50,7 @@ function ServiceCard({
             </div>
           </div>
         </div>
-      </div>
+     
     </>
   );
 }
