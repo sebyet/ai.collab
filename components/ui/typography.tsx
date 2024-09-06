@@ -11,19 +11,19 @@ export function Typography({ variant, children, className }: TypographyProps) {
   switch (variant) {
     case 'heading1':
       return (
-        <h1 className={cn("font-bold text-5xl lg:text-6xl tracking-wide lg:leading-snug text-pretty transition-colors", className)}>
+        <h1 className={cn("font-bold text-3xl lg:text-6xl tracking-wide lg:leading-snug text-pretty transition-colors", className)}>
           {children}
         </h1>
       );
     case 'heading2':
       return (
-        <h2 className={cn("font-bold text-4xl lg:text-5xl tracking-wide leading-snug lg:leading-snug text-pretty transition-colors", className)}>
+        <h2 className={cn("font-bold text-2xl lg:text-5xl tracking-wide leading-snug lg:leading-snug text-pretty transition-colors", className)}>
           {children}
         </h2>
       );
     case 'heading3':
       return (
-        <h3 className={cn("text-3xl lg:text-4xl font-semibold tracking-wide leading-relaxed text-pretty", className)}>
+        <h3 className={cn("text-xl lg:text-xl font-semibold tracking-wide leading-relaxed text-pretty", className)}>
           {children}
         </h3>
       );

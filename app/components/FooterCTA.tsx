@@ -10,8 +10,8 @@ import { useRef } from "react";
 export function FooterCTA() {
   const call = useRef(null);
   return (
-    <div id="call" ref={call} className="gap-10 border border-border rounded-xl text-center px-10 py-20 mt-10 md:mt-32 flex items-center flex-col bg-brand text-onBrand">
-      <Typography variant="heading3" className="text-6xl lg:text-8xl font-medium text-pretty">
+    <div id="call" ref={call} className="gap-10 border border-border rounded-xl text-center px-0 md:px-10 py-20 mt-10 md:mt-32 flex items-center flex-col bg-brand text-onBrand">
+      <Typography variant="heading3" className="text-xl md:text-6xl lg:text-8xl font-medium text-pretty">
         An AI Project in Mind?
         <br />
         Book a Free Call

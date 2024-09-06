@@ -24,19 +24,19 @@ const items = [
 export default function UseCases() {
 
   return (
-    <Carousel className="w-full max-w-full mx-auto flex flex-col gap-10 mt-10 md:mt-32">
+    <Carousel className="w-full max-w-full mx-auto flex flex-col gap-5 md:gap-10 mt-10 md:mt-32">
         <div className="flex items-center justify-between">
             <Typography variant="heading3">Use Cases</Typography>
             <div className="flex space-x-3">
-            <CarouselPrevious />
-            <CarouselNext />
+              <CarouselPrevious />
+              <CarouselNext />
             </div>
         </div>
         <CarouselContent>
             {items.map((item, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <Card>
-                <CardContent className="bg-gray-200 flex flex-col min-h-[600px] rounded-xl p-10">
+                <CardContent className="bg-gray-200 flex flex-col min-h-[500px] md:min-h-[600px] rounded-xl p-10">
                     <Typography className="text-brand" variant="large">{item.target}</Typography>
                     <div className="w-full h-fit mt-auto text-brand bg-white rounded-xl p-5 flex flex-col">
                         <Typography variant="paragraph">{item.text}</Typography>

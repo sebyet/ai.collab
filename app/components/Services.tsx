@@ -79,7 +79,7 @@ function ServiceCard({
 
 export default function Services() {
   return (
-    <div className="flex flex-col gap-10 mt-10 md:mt-32">
+    <div className="flex flex-col gap-5 md:gap-10 mt-10 md:mt-32">
       <Typography variant="heading3">Services</Typography>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <ServiceCard 
