@@ -14,7 +14,7 @@ const Hero = () => {
           Focus on what you do best<span className='hidden md:inline-block'>, no matter your companys size.</span>
         </Typography>
         <Typography className='max-w-[1000px] mx-auto' variant="heading1">
-          Using AI, we automate repetitive tasks & boost business processes.
+          We automate repetitive tasks<br></br> & boost business processes.
         </Typography>
         <Link href="/#call">
           <Button className="w-fit" size="lg" variant="default">
