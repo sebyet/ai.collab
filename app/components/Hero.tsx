@@ -3,18 +3,18 @@ import React from 'react';
 import Image from 'next/image';
 import { Typography } from '@/components/ui/typography';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 import { Link } from 'next-view-transitions';
 
 const Hero = () => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-5 text-center">
-        <Typography className="max-w-[600px] mx-auto border border-accent px-5 py-3 rounded-full" variant="large">
+        <Typography className="max-w-[600px] mx-auto border border-accent px-5 py-3 rounded-full text-xs md:text-lg" variant="large">
           Focus on what you do best<span className='hidden md:inline-block'>, no matter your companys size.</span>
         </Typography>
-        <Typography className='max-w-[1000px] mx-auto' variant="heading1">
-          We automate repetitive tasks<br></br> & boost business processes.
+        <Typography className='max-w-[1200px] mx-auto' variant="heading1">
+          We accelerate business processes<br></br>
+          using AI to automate them.
         </Typography>
         <Link href="/#call">
           <Button className="w-fit" size="lg" variant="default">
