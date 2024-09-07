@@ -16,7 +16,7 @@ export function FooterCTA() {
         <br />
         Book a Free Call
       </Typography>
-      <CalEmbed  calLink="sebyet/15min" />
+      <CalEmbed  calLink="sebastien-ai-collabs/15min" />
     </div>
   
   );
