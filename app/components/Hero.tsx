@@ -16,7 +16,7 @@ const items = [
 const Hero = () => {
   return (
     <div className='flex flex-col gap-5  md:gap-10'>
-      <div className="flex flex-col gap-10 bg-muted py-10 md:py-20 rounded-xl">
+      <div className="flex flex-col gap-10 bg-muted py-10 md:py-20 px-5 rounded-xl">
         <div className="flex flex-col gap-5 text-center">
           <Typography className="max-w-[600px] mx-auto border-2 border-accent bg-onBrand px-5 py-3 rounded-full text-xs md:text-lg" variant="large">
             Focus on what you do best<span className='hidden md:inline-block'>, no matter your companys size.</span>
