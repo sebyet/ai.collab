@@ -13,8 +13,7 @@ const Hero = () => {
           Focus on what you do best<span className='hidden md:inline-block'>, no matter your companys size.</span>
         </Typography>
         <Typography className='max-w-[1200px] mx-auto' variant="heading1">
-          We accelerate business processes<br></br>
-          using AI to automate them.
+          We transform your business processes using AI solutions to save you time and improve performance.        
         </Typography>
         <Link href="/#call">
           <Button className="w-fit" size="lg" variant="default">
