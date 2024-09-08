@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
 
                     <Link href="/#call">
                         <Button className='hidden md:flex' variant="accent">Book a Free Call</Button>
-                        <Button className='flex md:hidden' variant="accent">Book a call</Button>
+                        <Button className='flex md:hidden' size='sm' variant="accent">Book a call</Button>
                     </Link>
                    
               
