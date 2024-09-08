@@ -17,6 +17,9 @@ export function FooterCTA() {
         Book a Free Call
       </Typography>
       <CalEmbed  calLink="sebastien-ai-collabs/15min" />
+      <Typography  variant="large">
+        You can also reach us at <span className="underline text-accent"><a href="mailto:info@ai-collabs.com">info@ai-collabs.com</a></span>.
+      </Typography>
     </div>
   
   );

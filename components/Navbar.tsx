@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
         <>
             <nav className="flex flex-col py-5 px-0">
                 <ul className="flex w-full items-center justify-between">
-                    <Link className='textxl md:text-3xl font-semibold' href={"/"}>
+                    <Link className='text-xl md:text-3xl font-semibold' href={"/"}>
                         <span className='text-brand'>AI</span>
                         <span className='text-accent'>.</span>
                         <span className='text-brand'>Collabs</span>
