@@ -1,3 +1,4 @@
+import Expertise from "./components/Expertise";
 import Hero from "./components/Hero";
 import HeroSection from "./components/HeroSection";
  import Services from "./components/Services";
@@ -10,6 +11,7 @@ export default function Index() {
       <Hero />
       <VisionSection />
       <Services/>
+      <Expertise/>
       <UseCases/>
     </div>
   );
