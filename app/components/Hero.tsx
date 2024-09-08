@@ -44,7 +44,7 @@ const Hero = () => {
             </CarouselItem>
             ))}
         </CarouselContent>
-        <Typography variant='small'>* current average estimate based on studies on the use of AI in companies</Typography>
+        <Typography variant='small'>* current average estimate based on studies on the use of AI in companies.</Typography>
     </Carousel>
     </div>
   );
